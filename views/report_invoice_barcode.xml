@@ -6,7 +6,7 @@
             <th>Code-barres</th>
         </xpath>
 
-        <xpath expr="//td[@name='td_name']"
+        <xpath expr="//tbody//span[@t-field='line.name']/parent::td"
                position="before">
             <td>
                 <span t-esc="line.product_id.barcode or ''"/>
