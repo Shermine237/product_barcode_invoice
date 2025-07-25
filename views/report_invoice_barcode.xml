@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="report_invoice_document_barcode" inherit_id="account.report_invoice_document">
-        <xpath expr="//thead/tr/th[hasclass('product')]"
+        <xpath expr="//th[@name='th_description']"
                position="before">
             <th>Code-barres</th>
         </xpath>
 
-        <xpath expr="//tbody/tr/td[hasclass('product')]"
+        <xpath expr="//td[@name='td_name']"
                position="before">
             <td>
                 <span t-esc="line.product_id.barcode or ''"/>
