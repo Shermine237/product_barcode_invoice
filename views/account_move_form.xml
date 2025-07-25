@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_move_form_add_product_barcode" model="ir.ui.view">
+        <field name="name">account.move.form.add.product.barcode</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+
+            <!-- Ajout colonne "Code-barres" dans les lignes de facture -->
+            <xpath expr="//field[@name='invoice_line_ids']//list/field[@name='product_id']" position="before">
+                <field name="product_barcode" string="Code-barres" readonly="1" optional="show"/>
+            </xpath>
+
+            <!-- Ajout dans la vue mobile (formulaire ligne individuelle) -->
+            <xpath expr="//field[@name='invoice_line_ids']//form/sheet/group/field[@name='product_id']" position="before">
+                <field name="product_barcode" readonly="1"/>
+            </xpath>
+
+            <!-- Ajout dans la carte Kanban mobile -->
+            <xpath expr="//field[@name='invoice_line_ids']//kanban/templates/t/div/div[2]/div[2]" position="before">
+                <div class="text-muted">
+                    Code-barres : <field name="product_barcode"/>
+                </div>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>
