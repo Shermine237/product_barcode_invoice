@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
 
             <!-- Ajout colonne "Code-barres" dans les lignes de facture -->
-            <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='product_id']" position="after">
+            <xpath expr="//field[@name='invoice_line_ids']//list//field[@name='product_id']" position="after">
                 <field name="product_barcode" readonly="1" optional="show"/>
             </xpath>
 
