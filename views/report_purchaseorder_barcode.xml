@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_purchaseorder_barcode" inherit_id="purchase.report_purchaseorder_document">
+        <!-- En-tête : insérer Code-barres avant la description -->
+        <xpath expr="//th[@name='th_description']" position="before">
+            <th>Code-barres</th>
+        </xpath>
+
+        <!-- Corps du tableau : insérer la valeur Code-barres avant la cellule description -->
+        <xpath expr="//tbody//span[@t-field='line.name']/parent::td" position="before">
+            <td>
+                <span t-esc="line.product_id.barcode or ''"/>
+            </td>
+        </xpath>
+    </template>
+</odoo>
