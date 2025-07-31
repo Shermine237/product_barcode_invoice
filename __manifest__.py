@@ -1,6 +1,6 @@
 {
     "name": "Product Barcode on Documents",
-    "version": "2.0",
+    "version": "3.0",
     "author": "ABCD",
     "depends": ["account", "product", "sale", "purchase"],
     "data": [

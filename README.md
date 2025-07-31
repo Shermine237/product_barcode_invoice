@@ -1,17 +1,18 @@
-# Module Code-barres Produit sur Documents (Factures, Devis, Bons de commande)
+# Module Code-barres Produit sur Documents (Factures, Devis, Commandes, Bons de livraison)
 
 Ce module pour Odoo 18 permet d'afficher le code-barres des produits directement :
 
 * sur les lignes de **facture**
 * sur les lignes de **devis / commandes clients**
 * sur les lignes de **demandes de prix / bons de commande**
+* sur les lignes de **bons de livraison**
 
 Le code-barres apparaît aussi bien en vue formulaire qu'au sein des PDF générés.
 
 ## Fonctionnalités
 
-* **Colonne Code-barres :** Ajoute une colonne "Code-barres" dans les vues liste / formulaire des lignes des documents (factures, devis, commandes, RFQ/PO).
-* **Rapports PDF :** Intègre la colonne "Code-barres" dans les PDF des factures, devis et bons de commande.
+* **Colonne Code-barres :** Ajoute une colonne "Code-barres" dans les vues liste / formulaire des lignes des documents (factures, devis, commandes, RFQ/PO, bons de livraison).
+* **Rapports PDF :** Intègre la colonne "Code-barres" dans les PDF des factures, devis, bons de commande et bons de livraison.
 * **Champ calculé :** Le code-barres est récupéré dynamiquement depuis la fiche produit associée à la ligne de document.
 
 ## Installation
