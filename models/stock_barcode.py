@@ -12,3 +12,16 @@ class StockMoveLine(models.Model):
         readonly=True,
         store=False,
     )
+
+
+# Also add barcode on stock.move (parent move), used in main operations list
+
+class StockMove(models.Model):
+    _inherit = 'stock.move'
+
+    product_barcode = fields.Char(
+        string="Barcode",
+        related='product_id.barcode',
+        readonly=True,
+        store=False,
+    )
