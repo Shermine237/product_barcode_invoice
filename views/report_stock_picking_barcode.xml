@@ -19,9 +19,21 @@
             <th name="th_sml_barcode" class="text-start"><strong>Barcode</strong></th>
         </xpath>
 
-        <xpath expr="//table[@name='stock_move_line_table']//tr/td[1]" position="before">
+        <!-- Body rows with serial numbers -->
+        <xpath expr="//t[@t-call='stock.stock_report_delivery_has_serial_move_line']/tr/td[1]" position="before">
             <td>
                 <span t-field="move_line.product_id.barcode"/>
+            </td>
+        </xpath>
+    </template>
+
+    <!-- Override template for aggregated move lines (without serial numbers) -->
+    <template id="report_deliveryslip_barcode_aggregated" inherit_id="stock.stock_report_delivery_aggregated_move_lines">
+        <xpath expr="//tr/td[1]" position="before">
+            <td>
+                <t t-if="line.get('product_id')">
+                    <span t-field="line.product_id.barcode"/>
+                </t>
             </td>
         </xpath>
     </template>
