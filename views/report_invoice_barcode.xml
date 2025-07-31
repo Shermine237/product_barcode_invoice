@@ -3,7 +3,7 @@
     <template id="report_invoice_document_barcode" inherit_id="account.report_invoice_document">
         <xpath expr="//th[@name='th_description']"
                position="before">
-            <th>Code-barres</th>
+            <th>Barcode</th>
         </xpath>
 
         <xpath expr="//tbody//span[@t-field='line.name']/parent::td"

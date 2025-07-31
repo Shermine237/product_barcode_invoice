@@ -4,7 +4,7 @@ class AccountMoveLine(models.Model):
     _inherit = 'account.move.line'
 
     product_barcode = fields.Char(
-        string="Code-barres",
+        string="Barcode",
         compute="_compute_product_barcode",
         store=False,
         readonly=True

@@ -3,7 +3,7 @@
     <template id="report_saleorder_barcode" inherit_id="sale.report_saleorder_document">
         <!-- En-tête : insérer Code-barres avant la description -->
         <xpath expr="//th[@name='th_description']" position="before">
-            <th>Code-barres</th>
+            <th>Barcode</th>
         </xpath>
 
         <!-- Corps du tableau : insérer la valeur Code-barres avant la cellule description -->
