@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+
+    <!-- This view targets the main operations list -->
     <record id="view_picking_form_barcode" model="ir.ui.view">
         <field name="name">stock.picking.form.barcode</field>
         <field name="model">stock.picking</field>
         <field name="inherit_id" ref="stock.view_picking_form"/>
         <field name="arch" type="xml">
-            <!-- Add barcode field in the 'Operations' tab lines -->
-            <xpath expr="//field[@name='move_line_ids_without_package']//field[@name='product_id']" position="after">
-                <field name="product_barcode"/>
+            <xpath expr="//field[@name='move_ids_without_package']/tree/field[@name='product_id']" position="after">
+                <field name="product_barcode" optional="show"/>
             </xpath>
         </field>
     </record>
+
+    <!-- This view targets the detailed operations list (for lots/serials) -->
+    <record id="view_picking_form_barcode_detailed" model="ir.ui.view">
+        <field name="name">stock.picking.form.barcode.detailed</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='move_line_ids_without_package']/tree/field[@name='product_id']" position="after">
+                <field name="product_barcode" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+
 </odoo>
