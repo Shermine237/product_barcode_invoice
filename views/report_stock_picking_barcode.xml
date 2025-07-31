@@ -22,9 +22,10 @@
 
     <!-- Override template for aggregated move lines (without serial numbers) -->
     <template id="report_deliveryslip_barcode_aggregated" inherit_id="stock.stock_report_delivery_aggregated_move_lines">
-        <xpath expr="//tr/td[1]" position="before">
+        <xpath expr="//tr/td[1]" position="after">
             <td>
-                <span t-esc="aggregated_lines[line]['product_id'].barcode or ''"/>
+                <t t-set="prod" t-value="aggregated_lines[line].get('product_id')"/>
+                <span t-if="prod" t-esc="prod.barcode or ''"/>
             </td>
         </xpath>
     </template>
