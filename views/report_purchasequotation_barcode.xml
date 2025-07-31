@@ -7,7 +7,7 @@
         </xpath>
 
         <!-- Corps du tableau : insérer la valeur Barcode avant la cellule quantité/description -->
-        <xpath expr="//tbody//span[@t-field='line.product_qty']/parent::td" position="before">
+        <xpath expr="//tbody/tr/td[1]" position="before">
             <td>
                 <span t-esc="line.product_id.barcode or ''"/>
             </td>
