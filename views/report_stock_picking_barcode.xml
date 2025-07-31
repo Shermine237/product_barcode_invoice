@@ -24,8 +24,8 @@
     <template id="report_deliveryslip_barcode_aggregated" inherit_id="stock.stock_report_delivery_aggregated_move_lines">
         <xpath expr="//tr/td[1]" position="before">
             <td>
-                <t t-if="line.get('product_id')">
-                    <span t-esc="line.get('product_id').barcode"/>
+                <t t-if="hasattr(line, 'product_id') and line.product_id">
+                    <span t-field="line.product_id.barcode"/>
                 </t>
             </td>
         </xpath>
