@@ -25,7 +25,7 @@
         <xpath expr="//tr/td[1]" position="before">
             <td>
                 <t t-if="line.get('product_id')">
-                    <span t-field="line.product_id.barcode"/>
+                    <span t-esc="line.get('product_id').barcode"/>
                 </t>
             </td>
         </xpath>
