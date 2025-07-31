@@ -13,6 +13,14 @@ class StockMoveLine(models.Model):
         store=False,
     )
 
+    def _get_aggregated_product_quantities(self, **kwargs):
+        """Override to include barcode in aggregated dict for reports."""
+        res = super()._get_aggregated_product_quantities(**kwargs)
+        for vals in res.values():
+            product = vals.get('product_id')
+            vals['barcode'] = product.barcode if product else ''
+        return res
+
 
 # Also add barcode on stock.move (parent move), used in main operations list
 
