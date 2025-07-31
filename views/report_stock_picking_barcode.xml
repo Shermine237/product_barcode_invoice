@@ -19,7 +19,7 @@
             <th name="th_sml_barcode" class="text-start"><strong>Barcode</strong></th>
         </xpath>
 
-        <xpath expr="//table[@name='stock_move_line_table']/tbody/tr/td[1]" position="before">
+        <xpath expr="//table[@name='stock_move_line_table']//tr/td[1]" position="before">
             <td>
                 <span t-field="move_line.product_id.barcode"/>
             </td>
