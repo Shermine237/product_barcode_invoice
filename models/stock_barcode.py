@@ -16,9 +16,13 @@ class StockMoveLine(models.Model):
     def _get_aggregated_product_quantities(self, **kwargs):
         """Override to include barcode in aggregated dict for reports."""
         res = super()._get_aggregated_product_quantities(**kwargs)
+        Product = self.env['product.product']
         for vals in res.values():
-            product = vals.get('product_id')
-            vals['barcode'] = product.barcode if product else ''
+            prod = vals.get('product_id')
+            # prod may be a record, an ID, or None
+            if isinstance(prod, int):
+                prod = Product.browse(prod)
+            vals['barcode'] = prod.barcode if getattr(prod, 'barcode', False) else ''
         return res
 
 
