@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0-20250606\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-31 10:29+0000\n"
-"PO-Revision-Date: 2025-07-31 10:29+0000\n"
+"POT-Creation-Date: 2025-08-01 09:51+0000\n"
+"PO-Revision-Date: 2025-08-01 09:51+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,19 +16,42 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: product_barcode_invoice
+#: model_terms:ir.ui.view,arch_db:product_barcode_invoice.report_deliveryslip_barcode
+#: model_terms:ir.ui.view,arch_db:product_barcode_invoice.report_deliveryslip_barcode_done
+msgid "<strong>Barcode</strong>"
+msgstr "<strong>Code-barres</strong>"
+
+#. module: product_barcode_invoice
 #: model:ir.model.fields,field_description:product_barcode_invoice.field_account_move_line__product_barcode
 #: model:ir.model.fields,field_description:product_barcode_invoice.field_purchase_order_line__product_barcode
 #: model:ir.model.fields,field_description:product_barcode_invoice.field_sale_order_line__product_barcode
+#: model:ir.model.fields,field_description:product_barcode_invoice.field_stock_move__product_barcode
+#: model:ir.model.fields,field_description:product_barcode_invoice.field_stock_move_line__product_barcode
 #: model_terms:ir.ui.view,arch_db:product_barcode_invoice.report_invoice_document_barcode
 #: model_terms:ir.ui.view,arch_db:product_barcode_invoice.report_purchaseorder_barcode
+#: model_terms:ir.ui.view,arch_db:product_barcode_invoice.report_purchasequotation_barcode
 #: model_terms:ir.ui.view,arch_db:product_barcode_invoice.report_saleorder_barcode
 msgid "Barcode"
 msgstr "Code-barres"
 
 #. module: product_barcode_invoice
+#: model:ir.model.fields,help:product_barcode_invoice.field_account_move_line__product_barcode
+#: model:ir.model.fields,help:product_barcode_invoice.field_purchase_order_line__product_barcode
+#: model:ir.model.fields,help:product_barcode_invoice.field_sale_order_line__product_barcode
+#: model:ir.model.fields,help:product_barcode_invoice.field_stock_move__product_barcode
+#: model:ir.model.fields,help:product_barcode_invoice.field_stock_move_line__product_barcode
+msgid "International Article Number used for product identification."
+msgstr "Numéro d'article international utilisé pour l'identification des produits."
+
+#. module: product_barcode_invoice
 #: model:ir.model,name:product_barcode_invoice.model_account_move_line
 msgid "Journal Item"
 msgstr "Écriture comptable"
+
+#. module: product_barcode_invoice
+#: model:ir.model,name:product_barcode_invoice.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr "Mouvements de produit (Ligne de mouvement de stock)"
 
 #. module: product_barcode_invoice
 #: model:ir.model,name:product_barcode_invoice.model_purchase_order_line
@@ -39,3 +62,8 @@ msgstr "Ligne de bon de commande"
 #: model:ir.model,name:product_barcode_invoice.model_sale_order_line
 msgid "Sales Order Line"
 msgstr "Ligne de commande"
+
+#. module: product_barcode_invoice
+#: model:ir.model,name:product_barcode_invoice.model_stock_move
+msgid "Stock Move"
+msgstr "Mouvement de stock"
