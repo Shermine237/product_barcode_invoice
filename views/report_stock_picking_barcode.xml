@@ -26,7 +26,7 @@
             <td>
                 <t t-if="aggregated_lines[line].get('product_id')">
                     <t t-set="product" t-value="env['product.product'].browse(aggregated_lines[line].get('product_id'))"/>
-                    <span t-field="product.barcode"/>
+                    <span t-esc="product.barcode or 'PAS DE CODE'"/>
                 </t>
             </td>
         </xpath>
