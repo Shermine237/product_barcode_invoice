@@ -24,6 +24,7 @@ The barcode appears both in the form view and in the generated PDFs.
         "views/report_stock_picking_barcode.xml",
     ],
     "license": "LGPL-3",
+    "images": ["static/description/cover.png"],
     "support": "contact@charlieyossa.com",
     "installable": True,
     "application": False,

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d6efd"/>
+      <stop offset="100%" stop-color="#6610f2"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+    <style>
+      .title { font: 700 70px/1.1 'Segoe UI', Roboto, Arial, sans-serif; fill: #fff; }
+      .subtitle { font: 400 28px/1.4 'Segoe UI', Roboto, Arial, sans-serif; fill: #e9f2ff; }
+      .chip { font: 600 22px 'Segoe UI', Roboto, Arial, sans-serif; fill: #0d6efd; }
+      .label { font: 600 20px 'Segoe UI', Roboto, Arial, sans-serif; fill: #0d6efd; }
+      .text { font: 400 20px 'Segoe UI', Roboto, Arial, sans-serif; fill: #495057; }
+      .kbd { font: 700 18px 'Courier New', monospace; fill: #343a40; }
+      .small { font: 400 16px 'Segoe UI', Roboto, Arial, sans-serif; fill: #6c757d; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="150" cy="150" r="120" fill="#ffffff10"/>
+  <circle cx="1780" cy="200" r="160" fill="#ffffff08"/>
+  <circle cx="1820" cy="980" r="120" fill="#ffffff06"/>
+
+  <!-- Header content -->
+  <g transform="translate(140, 180)">
+    <text class="title">Product Barcode on Documents</text>
+    <text class="subtitle" y="90">Display product barcodes on invoices, quotations, purchase orders, and delivery slips (forms and PDFs)</text>
+
+    <!-- Feature chips -->
+    <g transform="translate(0, 140)">
+      <rect x="0" y="-30" rx="16" ry="16" width="240" height="48" fill="#fff"/>
+      <text class="chip" x="20" y="5">Invoices and Reports</text>
+
+      <rect x="260" y="-30" rx="16" ry="16" width="280" height="48" fill="#fff"/>
+      <text class="chip" x="280" y="5">Sales Orders and Quotations</text>
+
+      <rect x="560" y="-30" rx="16" ry="16" width="270" height="48" fill="#fff"/>
+      <text class="chip" x="580" y="5">Purchase Orders and RFQs</text>
+
+      <rect x="850" y="-30" rx="16" ry="16" width="250" height="48" fill="#fff"/>
+      <text class="chip" x="870" y="5">Delivery Slips</text>
+    </g>
+  </g>
+
+  <!-- Right document mockup card -->
+  <g transform="translate(1050, 170)" filter="url(#softShadow)">
+    <rect width="680" height="800" rx="24" fill="#fff"/>
+
+    <!-- Card header -->
+    <rect x="0" y="0" width="680" height="90" rx="24" ry="24" fill="#f1f5ff"/>
+    <text x="36" y="58" class="label">Invoice - SO/INV/2025/00123</text>
+
+    <!-- Table header -->
+    <g transform="translate(36, 140)">
+      <rect width="608" height="46" rx="10" fill="#f8f9fa"/>
+      <text class="small" x="16" y="30">Product</text>
+      <text class="small" x="270" y="30">Qty</text>
+      <text class="small" x="330" y="30">Price</text>
+      <text class="small" x="420" y="30">Barcode</text>
+    </g>
+
+    <!-- Rows with barcode preview -->
+    <g transform="translate(36, 210)">
+      <rect width="608" height="64" rx="12" fill="#ffffff" stroke="#edf2f7"/>
+      <text class="text" x="16" y="40">USB-C Hub Pro</text>
+      <text class="text" x="270" y="40">2</text>
+      <text class="text" x="330" y="40">$49.00</text>
+      <!-- Barcode -->
+      <g transform="translate(420, 16)">
+        <rect width="2" height="32" fill="#000"/>
+        <rect x="4" width="1" height="32" fill="#000"/>
+        <rect x="7" width="3" height="32" fill="#000"/>
+        <rect x="12" width="1" height="32" fill="#000"/>
+        <rect x="15" width="2" height="32" fill="#000"/>
+        <rect x="19" width="1" height="32" fill="#000"/>
+        <rect x="22" width="2" height="32" fill="#000"/>
+        <rect x="26" width="1" height="32" fill="#000"/>
+        <rect x="29" width="3" height="32" fill="#000"/>
+        <rect x="34" width="1" height="32" fill="#000"/>
+        <rect x="37" width="2" height="32" fill="#000"/>
+        <rect x="41" width="1" height="32" fill="#000"/>
+        <rect x="44" width="2" height="32" fill="#000"/>
+      </g>
+    </g>
+
+    <g transform="translate(36, 286)">
+      <rect width="608" height="64" rx="12" fill="#ffffff" stroke="#edf2f7"/>
+      <text class="text" x="16" y="40">Thermal Label Printer</text>
+      <text class="text" x="270" y="40">1</text>
+      <text class="text" x="330" y="40">$199.00</text>
+      <g transform="translate(420, 16)">
+        <rect width="1" height="32" fill="#000"/>
+        <rect x="3" width="2" height="32" fill="#000"/>
+        <rect x="7" width="1" height="32" fill="#000"/>
+        <rect x="10" width="3" height="32" fill="#000"/>
+        <rect x="15" width="1" height="32" fill="#000"/>
+        <rect x="18" width="2" height="32" fill="#000"/>
+        <rect x="22" width="1" height="32" fill="#000"/>
+        <rect x="25" width="2" height="32" fill="#000"/>
+        <rect x="29" width="1" height="32" fill="#000"/>
+        <rect x="32" width="3" height="32" fill="#000"/>
+        <rect x="37" width="1" height="32" fill="#000"/>
+        <rect x="40" width="2" height="32" fill="#000"/>
+        <rect x="44" width="1" height="32" fill="#000"/>
+      </g>
+    </g>
+
+    <g transform="translate(36, 362)">
+      <rect width="608" height="64" rx="12" fill="#ffffff" stroke="#edf2f7"/>
+      <text class="text" x="16" y="40">Barcode Sticker Pack</text>
+      <text class="text" x="270" y="40">5</text>
+      <text class="text" x="330" y="40">$9.90</text>
+      <g transform="translate(420, 16)">
+        <rect width="2" height="32" fill="#000"/>
+        <rect x="4" width="1" height="32" fill="#000"/>
+        <rect x="7" width="2" height="32" fill="#000"/>
+        <rect x="11" width="1" height="32" fill="#000"/>
+        <rect x="14" width="3" height="32" fill="#000"/>
+        <rect x="19" width="1" height="32" fill="#000"/>
+        <rect x="22" width="2" height="32" fill="#000"/>
+        <rect x="26" width="1" height="32" fill="#000"/>
+        <rect x="29" width="2" height="32" fill="#000"/>
+        <rect x="33" width="1" height="32" fill="#000"/>
+        <rect x="36" width="3" height="32" fill="#000"/>
+        <rect x="41" width="1" height="32" fill="#000"/>
+        <rect x="44" width="2" height="32" fill="#000"/>
+      </g>
+    </g>
+
+    <!-- Footer totals -->
+    <g transform="translate(36, 620)">
+      <rect width="608" height="120" rx="16" fill="#f8f9fa"/>
+      <text class="small" x="24" y="46">Subtotal</text>
+      <text class="small" x="520" y="46">$316.80</text>
+      <text class="small" x="24" y="82">Total (w/ taxes)</text>
+      <text class="small" x="520" y="82">$351.12</text>
+    </g>
+  </g>
+
+  <!-- Left feature card: benefits -->
+  <g transform="translate(140, 420)" filter="url(#softShadow)">
+    <rect width="800" height="320" rx="24" fill="#fff"/>
+    <text x="36" y="70" class="label">Why this module?</text>
+
+    <g transform="translate(36, 100)">
+      <circle r="22" cx="22" cy="-6" fill="#0d6efd"/>
+      <text x="58" y="0" class="text">Save time: direct barcode visibility avoids manual lookups</text>
+    </g>
+    <g transform="translate(36, 160)">
+      <circle r="22" cx="22" cy="-6" fill="#20c997"/>
+      <text x="58" y="0" class="text">Reduce errors: accurate product identification in documents</text>
+    </g>
+    <g transform="translate(36, 220)">
+      <circle r="22" cx="22" cy="-6" fill="#17a2b8"/>
+      <text x="58" y="0" class="text">Seamless: works in forms and PDF reports out of the box</text>
+    </g>
+  </g>
+
+  <!-- Bottom ribbon with meta -->
+  <g transform="translate(0, 980)">
+    <rect width="1920" height="100" fill="#ffffff20"/>
+    <text x="140" y="1040" class="subtitle">Odoo 18 • LGPL-3 • Dependencies: account, product, sale, purchase</text>
+  </g>
+</svg>
