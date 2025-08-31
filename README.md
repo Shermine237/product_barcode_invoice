@@ -1,6 +1,6 @@
 # Product Barcode Module on Documents (Invoices, Quotations, RFQ, Orders, Delivery Slips)
 
-This module for Odoo 18 allows displaying product barcodes directly:
+This module for Odoo allows displaying product barcodes directly:
 
 * on **invoice** lines
 * on **quotation / sales order** lines
@@ -29,7 +29,7 @@ Once the module is installed, the "Barcode" column will automatically appear on 
 
 ## Compatibility
 
-* Odoo 18.0
+* Odoo 19.0, 18.0, 17.0, 16.0, 15.0
 
 ## Author
 
