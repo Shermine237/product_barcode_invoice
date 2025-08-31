@@ -1,35 +1,36 @@
-# Module Code-barres Produit sur Documents (Factures, Devis, Commandes, Bons de livraison)
+# Product Barcode Module on Documents (Invoices, Quotations, RFQ, Orders, Delivery Slips)
 
-Ce module pour Odoo 18 permet d'afficher le code-barres des produits directement :
+This module for Odoo 18 allows displaying product barcodes directly:
 
-* sur les lignes de **facture**
-* sur les lignes de **devis / commandes clients**
-* sur les lignes de **demandes de prix / bons de commande**
-* sur les lignes de **bons de livraison**
+* on **invoice** lines
+* on **quotation / sales order** lines
+* on **RFQ / purchase order** lines
+* on **delivery slip** lines
 
-Le code-barres apparaît aussi bien en vue formulaire qu'au sein des PDF générés.
+The barcode appears both in the form view and in the generated PDFs.
 
-## Fonctionnalités
+## Features
 
-* **Colonne Code-barres :** Ajoute une colonne "Code-barres" dans les vues liste / formulaire des lignes des documents (factures, devis, commandes, RFQ/PO, bons de livraison).
-* **Rapports PDF :** Intègre la colonne "Code-barres" dans les PDF des factures, devis, bons de commande et bons de livraison.
-* **Champ calculé :** Le code-barres est récupéré dynamiquement depuis la fiche produit associée à la ligne de document.
+* **Barcode Column:** Adds a "Barcode" column in the list/form views of document lines (invoices, quotations, orders, RFQs/POs, delivery slips).
+* **PDF Reports:** Integrates the "Barcode" column into the PDFs of invoices, quotations, purchase orders, and delivery slips.
+* **Computed Field:** The barcode is dynamically retrieved from the product record associated with the document line.
 
 ## Installation
 
-1.  Copiez le dossier `product_barcode_invoice` dans le répertoire de vos addons Odoo.
-2.  Redémarrez le service Odoo.
-3.  Allez dans le menu `Apps` (Applications).
-4.  Cliquez sur `Mettre à jour la liste des applications`.
-5.  Recherchez le module "Product Barcode on Documents" et cliquez sur `Installer`.
+1. Copy the `product_barcode_invoice` folder into your Odoo addons directory.
+2. Restart the Odoo service.
+3. Go to the `Apps` menu (Applications).
+4. Click on `Update Apps List`.
+5. Search for the module **"Product Barcode on Documents"** and click on `Install`.
 
-## Utilisation
+## Usage
 
-Une fois le module installé, la colonne "Code-barres" apparaîtra automatiquement sur les documents cités ci-dessus, ainsi que dans leurs rapports PDF. Aucune configuration supplémentaire n'est nécessaire.
+Once the module is installed, the "Barcode" column will automatically appear on the mentioned documents, as well as in their PDF reports. No additional configuration is required.
 
-## Compatibilité
+## Compatibility
 
-*   Odoo 18.0
+* Odoo 18.0
 
-## Auteur
+## Author
+
 Charlie Rostant YOSSA (Shermine237)
