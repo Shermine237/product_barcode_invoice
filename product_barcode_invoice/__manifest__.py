@@ -1,9 +1,9 @@
 {
     "name": "Product Barcode on Documents",
-    "version": "18.0.0.1.1",
+    "version": "17.0.0.1.1",
     "author": "Charlie Rostant YOSSA",
     "description": """
-This module for Odoo 18 allows displaying product barcodes directly:
+This module for Odoo 17 allows displaying product barcodes directly:
     - on invoice lines
     - on quotation / sales order lines
     - on RFQ / purchase order lines
