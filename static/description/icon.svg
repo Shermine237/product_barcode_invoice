@@ -1,0 +1,102 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="128" cy="128" r="120" fill="#007bff" stroke="#0056b3" stroke-width="4"/>
+  
+  <!-- Document background -->
+  <rect x="60" y="50" width="136" height="156" rx="8" fill="white" stroke="#e9ecef" stroke-width="2"/>
+  
+  <!-- Document header lines -->
+  <rect x="75" y="70" width="106" height="4" rx="2" fill="#6c757d"/>
+  <rect x="75" y="82" width="80" height="3" rx="1.5" fill="#adb5bd"/>
+  
+  <!-- Table structure -->
+  <rect x="75" y="100" width="106" height="2" fill="#dee2e6"/>
+  <rect x="75" y="115" width="106" height="2" fill="#dee2e6"/>
+  <rect x="75" y="130" width="106" height="2" fill="#dee2e6"/>
+  <rect x="75" y="145" width="106" height="2" fill="#dee2e6"/>
+  
+  <!-- Product lines -->
+  <rect x="78" y="105" width="40" height="8" rx="1" fill="#28a745"/>
+  <rect x="78" y="120" width="35" height="8" rx="1" fill="#17a2b8"/>
+  <rect x="78" y="135" width="42" height="8" rx="1" fill="#ffc107"/>
+  
+  <!-- Barcode representation -->
+  <g transform="translate(130, 105)">
+    <!-- Barcode bars -->
+    <rect x="0" y="0" width="2" height="12" fill="#000"/>
+    <rect x="4" y="0" width="1" height="12" fill="#000"/>
+    <rect x="7" y="0" width="3" height="12" fill="#000"/>
+    <rect x="12" y="0" width="1" height="12" fill="#000"/>
+    <rect x="15" y="0" width="2" height="12" fill="#000"/>
+    <rect x="19" y="0" width="1" height="12" fill="#000"/>
+    <rect x="22" y="0" width="2" height="12" fill="#000"/>
+    <rect x="26" y="0" width="1" height="12" fill="#000"/>
+    <rect x="29" y="0" width="3" height="12" fill="#000"/>
+    <rect x="34" y="0" width="1" height="12" fill="#000"/>
+    <rect x="37" y="0" width="2" height="12" fill="#000"/>
+    <rect x="41" y="0" width="1" height="12" fill="#000"/>
+    <rect x="44" y="0" width="2" height="12" fill="#000"/>
+  </g>
+  
+  <g transform="translate(130, 120)">
+    <!-- Second barcode -->
+    <rect x="0" y="0" width="1" height="12" fill="#000"/>
+    <rect x="3" y="0" width="2" height="12" fill="#000"/>
+    <rect x="7" y="0" width="1" height="12" fill="#000"/>
+    <rect x="10" y="0" width="3" height="12" fill="#000"/>
+    <rect x="15" y="0" width="1" height="12" fill="#000"/>
+    <rect x="18" y="0" width="2" height="12" fill="#000"/>
+    <rect x="22" y="0" width="1" height="12" fill="#000"/>
+    <rect x="25" y="0" width="2" height="12" fill="#000"/>
+    <rect x="29" y="0" width="1" height="12" fill="#000"/>
+    <rect x="32" y="0" width="3" height="12" fill="#000"/>
+    <rect x="37" y="0" width="1" height="12" fill="#000"/>
+    <rect x="40" y="0" width="2" height="12" fill="#000"/>
+    <rect x="44" y="0" width="1" height="12" fill="#000"/>
+  </g>
+  
+  <g transform="translate(130, 135)">
+    <!-- Third barcode -->
+    <rect x="0" y="0" width="2" height="12" fill="#000"/>
+    <rect x="4" y="0" width="1" height="12" fill="#000"/>
+    <rect x="7" y="0" width="2" height="12" fill="#000"/>
+    <rect x="11" y="0" width="1" height="12" fill="#000"/>
+    <rect x="14" y="0" width="3" height="12" fill="#000"/>
+    <rect x="19" y="0" width="1" height="12" fill="#000"/>
+    <rect x="22" y="0" width="2" height="12" fill="#000"/>
+    <rect x="26" y="0" width="1" height="12" fill="#000"/>
+    <rect x="29" y="0" width="2" height="12" fill="#000"/>
+    <rect x="33" y="0" width="1" height="12" fill="#000"/>
+    <rect x="36" y="0" width="3" height="12" fill="#000"/>
+    <rect x="41" y="0" width="1" height="12" fill="#000"/>
+    <rect x="44" y="0" width="2" height="12" fill="#000"/>
+  </g>
+  
+  <!-- Barcode scanner icon -->
+  <g transform="translate(85, 165)">
+    <rect x="0" y="0" width="86" height="20" rx="10" fill="#dc3545" opacity="0.8"/>
+    <rect x="8" y="6" width="70" height="8" rx="4" fill="white"/>
+    <circle cx="74" cy="10" r="3" fill="#dc3545"/>
+    <rect x="12" y="8" width="1" height="4" fill="#000"/>
+    <rect x="15" y="8" width="2" height="4" fill="#000"/>
+    <rect x="19" y="8" width="1" height="4" fill="#000"/>
+    <rect x="22" y="8" width="1" height="4" fill="#000"/>
+    <rect x="25" y="8" width="2" height="4" fill="#000"/>
+    <rect x="29" y="8" width="1" height="4" fill="#000"/>
+    <rect x="32" y="8" width="2" height="4" fill="#000"/>
+    <rect x="36" y="8" width="1" height="4" fill="#000"/>
+    <rect x="39" y="8" width="1" height="4" fill="#000"/>
+    <rect x="42" y="8" width="2" height="4" fill="#000"/>
+    <rect x="46" y="8" width="1" height="4" fill="#000"/>
+    <rect x="49" y="8" width="2" height="4" fill="#000"/>
+    <rect x="53" y="8" width="1" height="4" fill="#000"/>
+    <rect x="56" y="8" width="1" height="4" fill="#000"/>
+    <rect x="59" y="8" width="2" height="4" fill="#000"/>
+    <rect x="63" y="8" width="1" height="4" fill="#000"/>
+  </g>
+  
+  <!-- Small Odoo-style elements -->
+  <circle cx="190" cy="70" r="8" fill="#28a745"/>
+  <circle cx="190" cy="90" r="8" fill="#17a2b8"/>
+  <circle cx="190" cy="110" r="8" fill="#ffc107"/>
+</svg>

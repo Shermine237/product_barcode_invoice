@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Barcode on Documents - Odoo App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Header Section with Logo -->
+        <div class="row bg-primary text-white py-4 mb-4">
+            <div class="col-12 text-center">
+                <!-- Logo placeholder - Recommended size: 256x256px PNG with transparent background -->
+                <img src="icon.png" alt="Product Barcode on Documents Logo" class="mb-3" style="max-width: 128px; height: auto;">
+                <h1 class="display-4 font-weight-bold">Product Barcode on Documents</h1>
+                <p class="lead">Display product barcodes directly on invoices, quotations, purchase orders, and delivery slips</p>
+            </div>
+        </div>
+
+        <!-- Key Features Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-primary font-weight-bold mb-4">🚀 Key Features</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100 border-primary">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">📄 Invoice Integration</h5>
+                                <p class="card-text">Automatically display product barcodes on invoice lines in both form view and PDF reports.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100 border-success">
+                            <div class="card-body">
+                                <h5 class="card-title text-success">💼 Sales & Quotations</h5>
+                                <p class="card-text">Add barcode columns to quotations and sales orders for better product identification.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100 border-warning">
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">🛒 Purchase Orders</h5>
+                                <p class="card-text">Include product barcodes in RFQs and purchase orders for streamlined procurement.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100 border-info">
+                            <div class="card-body">
+                                <h5 class="card-title text-info">📦 Delivery Slips</h5>
+                                <p class="card-text">Show barcodes on delivery slips to facilitate warehouse operations and shipping.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Screenshots Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-primary font-weight-bold mb-4">📸 Screenshots</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <!-- Screenshot placeholder - Recommended size: 1200x800px -->
+                        <div class="card">
+                            <div class="bg-light text-center py-5" style="min-height: 300px; display: flex; align-items: center; justify-content: center;">
+                                <div>
+                                    <i class="fas fa-image fa-3x text-muted mb-3"></i>
+                                    <p class="text-muted">Invoice with Barcode Column<br><small>Recommended: 1200x800px</small></p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Invoice Form View</h5>
+                                <p class="card-text">Product barcodes displayed directly in invoice line items for easy identification and processing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <!-- Screenshot placeholder - Recommended size: 1200x800px -->
+                        <div class="card">
+                            <div class="bg-light text-center py-5" style="min-height: 300px; display: flex; align-items: center; justify-content: center;">
+                                <div>
+                                    <i class="fas fa-image fa-3x text-muted mb-3"></i>
+                                    <p class="text-muted">Sales Order with Barcodes<br><small>Recommended: 1200x800px</small></p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Sales Order View</h5>
+                                <p class="card-text">Enhanced sales orders with barcode information for better product tracking and customer service.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <!-- Screenshot placeholder - Recommended size: 1200x800px -->
+                        <div class="card">
+                            <div class="bg-light text-center py-5" style="min-height: 300px; display: flex; align-items: center; justify-content: center;">
+                                <div>
+                                    <i class="fas fa-image fa-3x text-muted mb-3"></i>
+                                    <p class="text-muted">PDF Report with Barcodes<br><small>Recommended: 1200x800px</small></p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">PDF Reports</h5>
+                                <p class="card-text">Professional PDF documents with integrated barcode information for printing and sharing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <!-- Screenshot placeholder - Recommended size: 1200x800px -->
+                        <div class="card">
+                            <div class="bg-light text-center py-5" style="min-height: 300px; display: flex; align-items: center; justify-content: center;">
+                                <div>
+                                    <i class="fas fa-image fa-3x text-muted mb-3"></i>
+                                    <p class="text-muted">Purchase Order Integration<br><small>Recommended: 1200x800px</small></p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Purchase Order Management</h5>
+                                <p class="card-text">Streamlined procurement process with barcode visibility in purchase orders and RFQs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Benefits Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-primary font-weight-bold mb-4">✨ Benefits</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="text-center">
+                            <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fas fa-clock fa-lg"></i>
+                            </div>
+                            <h5 class="font-weight-bold">Time Saving</h5>
+                            <p class="text-muted">Quickly identify products using barcodes without manual lookup, reducing processing time significantly.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="text-center">
+                            <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fas fa-check-circle fa-lg"></i>
+                            </div>
+                            <h5 class="font-weight-bold">Error Reduction</h5>
+                            <p class="text-muted">Minimize human errors in product identification and inventory management with accurate barcode display.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="text-center">
+                            <div class="bg-info text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fas fa-cogs fa-lg"></i>
+                            </div>
+                            <h5 class="font-weight-bold">Seamless Integration</h5>
+                            <p class="text-muted">Works automatically with existing Odoo workflows without requiring additional configuration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Details Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-primary font-weight-bold mb-4">🔧 Technical Details</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card border-light">
+                            <div class="card-header bg-light">
+                                <h5 class="card-title mb-0">Module Information</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li><strong>Version:</strong> 18.0.0.1.1</li>
+                                    <li><strong>License:</strong> LGPL-3</li>
+                                    <li><strong>Compatibility:</strong> Odoo 18.0</li>
+                                    <li><strong>Dependencies:</strong> account, product, sale, purchase</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card border-light">
+                            <div class="card-header bg-light">
+                                <h5 class="card-title mb-0">Implementation</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li><strong>Field Type:</strong> Computed field (related)</li>
+                                    <li><strong>Storage:</strong> Non-stored for optimal performance</li>
+                                    <li><strong>Views:</strong> Form and PDF report integration</li>
+                                    <li><strong>Models:</strong> Account, Sales, Purchase, Stock</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Installation & Usage Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-primary font-weight-bold mb-4">📋 Installation & Usage</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-header bg-primary text-white">
+                                <h5 class="card-title mb-0">Installation Steps</h5>
+                            </div>
+                            <div class="card-body">
+                                <ol class="pl-3">
+                                    <li class="mb-2">Install the module from the Odoo Apps menu</li>
+                                    <li class="mb-2">Update your apps list if needed</li>
+                                    <li class="mb-2">Search for "Product Barcode on Documents"</li>
+                                    <li class="mb-2">Click Install and wait for completion</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-header bg-success text-white">
+                                <h5 class="card-title mb-0">Usage</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">✅ No additional configuration required</li>
+                                    <li class="mb-2">✅ Barcode column appears automatically</li>
+                                    <li class="mb-2">✅ Works in both form views and PDF reports</li>
+                                    <li class="mb-2">✅ Compatible with existing workflows</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Support Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <h3 class="text-primary font-weight-bold mb-3">💬 Need Support?</h3>
+                        <p class="lead mb-4">Get professional support and assistance for this module</p>
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 mb-3">
+                                <div class="card border-primary">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
+                                        <h5>Email Support</h5>
+                                        <p class="text-muted">Get help via email</p>
+                                        <a href="mailto:contact@charlieyossa.com" class="btn btn-primary">Contact Support</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card border-success">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-user fa-2x text-success mb-3"></i>
+                                        <h5>Author</h5>
+                                        <p class="text-muted">Charlie Rostant YOSSA</p>
+                                        <p class="small text-muted">Experienced Odoo Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="row">
+            <div class="col-12">
+                <hr>
+                <div class="text-center text-muted py-3">
+                    <p class="mb-0">
+                        <strong>Product Barcode on Documents</strong> - Version 18.0.0.1.1<br>
+                        <small>Licensed under LGPL-3 | Compatible with Odoo 18.0</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
